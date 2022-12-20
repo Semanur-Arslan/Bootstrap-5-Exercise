@@ -1,0 +1,163 @@
+body {
+    font-family: sans-serif;
+    height: 2000px;
+}
+
+/* HEADER */
+#header .nav-link {
+    color: whitesmoke;
+   
+}
+
+
+.bg-scrolling {
+    background: black;
+}
+
+
+#header .active {
+    border-bottom: 2px ;
+}
+
+#header .nav-link:hover {
+    color: #11A75F;
+}
+
+/* ONESECTİON */
+#oneSection {
+background-image: url('/img/bg.jpg')  ;
+background-size: cover;
+background-position: center center;
+height: 70vh;
+}
+
+
+
+
+/* TWOSECTİON */
+
+#twoSection .circle {
+    margin-top: -80px;
+    
+}
+
+#twoSection .circle img {
+    border-width: 8px !important;
+}
+
+/* ABOUTSECTİON */
+#aboutSection {
+    padding: 80px 0px;
+}
+
+/* PORTFOLİO*/
+
+.portfolio-item button {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .8s;
+    
+}
+
+
+
+#portfolio .portfolio-item:hover .overlay {
+    opacity: .8;
+    background-color: #11A75F;
+}
+
+
+#portfolio .portfolio-item .icon {
+    transform: translateY(20px);
+    transition: all .9s;
+    opacity: 0;
+    font-size: 5px;  
+}
+
+#portfolio .portfolio-item:hover .icon {
+    opacity: 1;
+    transform: none;
+}
+
+
+/* QUESTİONS*/
+#questions .container-fluid {
+    background-image: url('/img/questions\ background.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 70%;
+}
+
+.accordion-item {
+    width: 450px;
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-item button {
+    background-color: #020607;
+    color: white;
+}
+
+.accordion-body {
+    background-color: #020607;
+    color: whitesmoke;
+}
+
+.accordion-button:not(.collapsed){
+    color: inherit;
+    background-color: #198754;
+    border: none;
+    box-shadow: none; 
+}
+
+.accordion-button::after {
+    filter: grayscale(100%) invert(100%);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* TEAM */
+#team .container-fluid {
+    background-image: url('/img/questions\ background.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 30%;
+}
+
+
+/* CONTACT*/
+#contact .container-fluid {
+    background-image: url(/img/contact-background.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 60%;
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+    #oneSection h1.display-3 {
+        font-size: 35px;
+    }
+ }
+
+
+ @media (max-width: 767.98px) {
+    #twoSection .circle {
+        margin-top: 2px;
+    }
+ }
